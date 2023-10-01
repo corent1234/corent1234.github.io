@@ -8,7 +8,7 @@
 # Site Settings
 locale                   : "en-US"
 title                    : "Félix Yvonnet"
-title_separator          : "-"
+title_separator          : "|"
 name                     : &name "Félix Yvonnet"
 description              : &description "I'm a comuter science student enjoying whatsoever life brings me"
 url                      : https://Felix-Yvonnet.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
