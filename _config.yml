@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Félix Yvonnet"
 title_separator          : "-"
 name                     : &name "Félix Yvonnet"
-description              : &description "I'm a comuter science student enjoying whersoever life brings me"
+description              : &description "I'm a comuter science student enjoying whatsoever life brings me"
 url                      : https://Felix-Yvonnet.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Felix-Yvonnet/Felix-Yvonnet.github.io"
@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Félix Yvonnet"
   avatar           : "profile.png"
-  bio              : "I'm a comuter science student enjoying whersoever life brings me."
-  location         : 
+  bio              : "I'm a comuter science student enjoying whatsoever life brings me"
+  location         : "Paris"
   employer         : "ENS Paris-Saclay"
   pubmed           : 
-  googlescholar    :
-  email            : felix.yvonnet@gmail.com
+  googlescholar    : 
+  email            : "felix.yvonnet@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
