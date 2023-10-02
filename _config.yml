@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Félix Yvonnet"
 title_separator          : "|"
 name                     : &name "Félix Yvonnet"
-description              : &description "I'm a comuter science student enjoying whatsoever life brings me"
+description              : &description "Computer Science Student"
 url                      : https://Felix-Yvonnet.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Felix-Yvonnet/Felix-Yvonnet.github.io"
@@ -73,7 +73,7 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               :  # "google-universal" # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          :
 
@@ -88,8 +88,8 @@ author:
   googlescholar    : 
   email            : "felix.yvonnet@gmail.com"
   employer         :
-    name              : "ENS Paris Saclay"
-    url               : "https://ens-paris-saclay.fr/en"
+    name              : "LaBRI"
+    url               : "https://www.labri.fr/en"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -148,6 +148,7 @@ exclude:
   - package.json
   - tmp
   - vendor
+  - serve
 keep_files:
   - .git
   - .svn
@@ -189,7 +190,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
-
+  software:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -201,8 +204,8 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
-      share: true
+      comments: false
+      share: false
       related: true
   # _pages
   - scope:
@@ -218,8 +221,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
-      comments: true
+      share: false
+      comments: false
   # _publications
   - scope:
       path: ""
@@ -227,8 +230,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
-      comments: true
+      share: false
+      comments: false
   # _portfolio
   - scope:
       path: ""
@@ -236,7 +239,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       comment: true
   # _talks
   - scope:
@@ -245,7 +248,15 @@ defaults:
     values:
       layout: talk
       author_profile: true
-      share: true
+      share: false
+  # _software
+  - scope:
+      path: ""
+      type: software
+    values:
+      layout: single
+      author_profile: true
+      share: false
 
 # Sass/SCSS
 sass:
@@ -257,20 +268,18 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Paris # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
 plugins:
   - jekyll-paginate
-  - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
-  - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jemoji
@@ -286,12 +295,6 @@ whitelist:
 #  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
 #  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path/my-awesome-category/index.html ~> path: /
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
