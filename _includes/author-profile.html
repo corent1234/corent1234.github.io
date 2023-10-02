@@ -4,7 +4,7 @@
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
 
-<div itemscope itemtype="http://schema.org/Person">
+<div itemscope itemtype="http://schema.org/Person" id="canvas-wrapper">
 
   <div class="author__avatar">
     {% if author.avatar contains "://" %}
@@ -25,8 +25,13 @@
       {% if author.location %}
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.location }}</li>
       {% endif %}
-      {% if author.employer %}
-        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.employer }}</li>
+      {% if author.employer.name %}
+        <li>
+        {% if author.employer.url %}
+        <a href="{{ author.employer.url }}"><i class="fas fa-fw fa-briefcase" aria-hidden="true"></i> {{ author.employer.name }}</li></a>
+        {% else %}
+        <i class="fas fa-fw fa-briefcase" aria-hidden="true"></i> {{ author.employer.name }}</li>
+        {% endif %}
       {% endif %}
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
