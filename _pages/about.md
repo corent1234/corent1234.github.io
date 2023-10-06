@@ -16,6 +16,7 @@ Feel free to send me an email at [felix.yvonnet@gmail.com](mailto:felix.yvonnet@
 Some of my research interests
 ------
 - Program synthesis
+- SAT solvers
 - Coq proof assistant
 - Category theory
 - Automation
