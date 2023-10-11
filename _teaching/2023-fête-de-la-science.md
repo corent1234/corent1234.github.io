@@ -1,7 +1,7 @@
 ---
 title: "Fête de la science"
 collection: teaching
-type: "Introduction"
+type: "Introduction to computer science"
 permalink: /teaching/2023-fête-de-la-science
 venue: "ENS Paris-Saclay"
 date: 2023-10-07
