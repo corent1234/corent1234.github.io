@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 {% if author.github %}
-  You can find most of my projects in <u><a href="{{author.googlescholar}}"> my GitHub</a>.</u>
+  You can find most of my projects in <u><a href="http://github.com/{{ site.author.github }}"> my GitHub</a>.</u>
 {% endif %}
 
 {% include base_path %}
