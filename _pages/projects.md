@@ -12,5 +12,7 @@ author_profile: true
 {% include base_path %}
 
 {% for post in site.projects reversed %}
+  post.description
   {% include archive-single.html %}
 {% endfor %}
+a project was expected here
