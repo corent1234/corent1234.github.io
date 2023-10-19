@@ -1,9 +1,10 @@
 ---
-layout: archive
-title: "Projects"
 permalink: /projects/
+title: "Projects"
 author_profile: true
+redirect_from: 
+  - /test/
 ---
 
 
-a project was expected here
+Not updated yet, might be filled out soon.
