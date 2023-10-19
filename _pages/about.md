@@ -17,6 +17,7 @@ Some of my research interests
 ------
 - Program synthesis
 - SAT solvers
+- Program semantics
 - Coq proof assistant
 - Category theory
 - Automation
