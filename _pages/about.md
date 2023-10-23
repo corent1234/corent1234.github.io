@@ -19,6 +19,6 @@ Some of my research interests
 - SAT solvers
 - Program semantics
 - Coq proof assistant
-- Category theory
+- Abstract nonsense
 - Automation
 - Anything except the lisp programing language
